@@ -9,6 +9,7 @@ import {
 // https://astro.build/config
 export default defineConfig({
   site: "https://vtbot-starlight-demo.pages.dev",
+  trailingSlash: "always",
   markdown: {
     remarkPlugins: [remarkEndOfMarkdown],
   },
@@ -24,7 +25,7 @@ export default defineConfig({
           label: "Guides",
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: "Example Guide", slug: "guides/example" },
+            { label: "Example Guide", link: "/guides/example/" },
           ],
         },
         {
