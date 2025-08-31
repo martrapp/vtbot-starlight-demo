@@ -17,9 +17,7 @@ export default defineConfig({
     starlight({
       title: "My Docs",
       plugins: [viewTransitions()],
-      social: {
-        github: "https://github.com/withastro/starlight",
-      },
+      customCss: ["./src/styles/custom.css"],
       sidebar: [
         {
           label: "Guides",
